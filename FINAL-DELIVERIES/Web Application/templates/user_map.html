@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1><b>User Map</b></h1></center>
+    <div id="activecase" class="activecase">
+      <p style="color: #fff; margin : 20px -140px; position:absolute">{{activecase}}</p>
+    </div>
+    <a href="/index" style="margin-left:1200px;">home >></a>
+    <!-- {{mark}} -->
+    <div id="map"></div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwNf83urQGtHycR0DKmyai_wFpjsH4ucc"
+      defer
+    ></script>
+
+    <script>
+
+
+        var a=0;
+        var b=0;
+
+        var reqcount = 0;
+        navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+        
+        function successCallback(position){
+        const {accuracy, latitude, longitude, altitude, heading, speed} = position.coords;
+            reqcount++;
+            // console.log("accuracy : "+accuracy);
+            // console.log("latitude : "+latitude);
+            // console.log("longitude : "+longitude);
+            // console.log("altitude : "+ altitude);
+            // console.log("heading : "+heading);
+            // console.log("speed : "+speed);
+            a = latitude;
+            b=longitude;
+            window.initMap(a,b) = initMap(a,b);
+
+        }
+        function errorCallback(error) {
+            
+        }
+
+        var options={
+            enableHighAccuracy : false,
+            timeout: 5000,
+            maximumAge:0
+        };
+
+function initMap(a,b) {
+  const pos = { lat: a, lng: b };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: pos,
+  });
+  const marker = new google.maps.Marker({
+    position: pos,
+    map: map,
+  });
+
+  // add marker
+
+  '{%for i in range(0, len)%}'
+  
+    var dblat = '{{mark[i]["LATITUDE"]}}';
+    console.log("added " + '{{mark[i]["DESCRIPTION"]}}');
+    var dblng = '{{mark[i]["LANGTITUDE"]}}';
+    var dbdisc = '{{mark[i]["DESCRIPTION"]}}';
+    var dbactive='{{mark[i]["ACTIVECASE"]}}';
+    var dbtotal='{{mark[i]["TOTALCASE"]}}';
+
+    addMarker({lat:parseFloat(dblat),lng:parseFloat(dblng)});
+
+  '{%endfor%}'
+
+  function addMarker(coords){
+    var marker = new google.maps.Marker({
+      position : coords,
+      map : map,
+    })
+    const contentString =
+                '<div id="content">' +
+                '<div id="siteNotice">' +
+                "</div>" +
+                '<h1 id="firstHeading" class="firstHeading">' + dbdisc + '</h1>'+
+                '<h3>active:'+ dbactive + '</h3>'+
+                '<h3>total:'+ dbtotal + '</h3>' +
+                '<div id="bodyContent">' +
+                'Latitude : ' + dblat + '<br>' +
+                'Langitude : ' + dblng +
+                "</div>" +
+                "</div>";
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                ariaLabel: "Uluru",
+            });
+            marker.addListener("click", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                });
+            });
+  }
+
+
+}
+
+    </script>
+
+</body>
+</html>

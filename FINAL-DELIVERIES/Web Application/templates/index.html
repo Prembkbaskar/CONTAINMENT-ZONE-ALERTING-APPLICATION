@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Saftey zone</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/img/favicon.png" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/v5-font-face.min.css" integrity="sha512-5V4m5oBRPLC2aZloM2/C/Simvm/jRfHXcqxTC6iW3FS93jfEWEFmJ7dWqAHME6CGlAG4StQ3f7kN41EUjEFJUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/img/logo.png" alt=""> -->
+        <h1>Safe Zone</h1>
+        <div id="useracnt" class="useracnt">
+          <p style="color: #fff; margin : 20px -140px; position:absolute">{{name}}</p>
+        </div>
+
+      </a>
+
+     
+      <i class="mobile-nav-toggle mobile-nav-show fa-solid fa-bars"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none fa-brands fa-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+
+          <li><a href="mail">Contact</a></li>
+          <li><a class="get-a-quote" href="logincus">Customer</a></li>
+          <li><a class="get-a-quote" href="loginhos">Hospital</a></li>
+          <li><a class="btn btn-danger logout" href="logout">Logout</a></li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Containment Zone Alerting Application</h2>
+          <p data-aos="fade-up" data-aos-delay="100">We may give a save zone details when the user passing through the
+            containmentd zone via alert message. We include a google map for registered user to track where they are
+            pass and where the containmented zone present neary by the user.</p>
+
+          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" class="form-control" placeholder="ZIP code or CitY to know the COVID-19 case details">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Active Cases</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="5001" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Deaths</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="8695" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Cured</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="467566" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Total Cases</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+                <div class="col-lg-5order-1 order-lg-2 hero-img" data-aos="zoom-out">
+        </div>
+        <!-- https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/assets/pinlocation.svg -->
+        <!--  -->
+        <img class="img-fluid mb-2 mb-lg-0 w-50" src="https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/containment-zone-4095431-3391664.svg" alt="">
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main"><br><br><br><br><br>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">            
+            <img src="https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/assets/about2.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first ">
+            <h3>About Us</h3>
+            <p>
+              We offer a platform to alert users who register on our website when they enter a COVID19 infected zone
+              area using Google Maps, and we help users create the ideal path to safe family travel.
+
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-diagram-project"></i>
+                <div>
+                  <h5>Suggest an alternative path</h5>
+                  <p>We give a suggestion for alternative path to reach your destination via google map as given in our
+                    site</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                <div>
+                  <h5>Marking a infected area</h5>
+                  <p>We should mark a infected area with the different color circle shaped marker which denotes the
+                    infection</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-location"></i>
+                <div>
+                  <h5>Location Service</h5>
+                  <p>We request you to allow us to access your location then only we can able to track our location
+                    coordinates and notify yours</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Call To Action</h3>
+            <p> Click the button as shown in below to redirect you to our googel map api and monitor to protect you and
+              your family form COVID 19 zone.</p>
+            <a class="cta-btn" href="calltoaction">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <!-- https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/img/features-1.jpg -->
+            <img src="https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/assets/ourwork.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>What we do ?.</h3>
+            <p class="fst-italic">
+              We detect your location coordinates with your permission by click the allow button when you enter into our
+              googel map api and notify you when your coordintes enters into the containmented zone.
+            </p>
+            <ul>
+              <li><i class="fas fa-hand-point-right"></i> Track your location.</li>
+              <li><i class="fas fa-hand-point-right"></i> Get your coordinates and make a live tracker.</li>
+              <li><i class="fas fa-hand-point-right"></i> Alert you to enter into the specified zone.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img
+              src="https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/assets/yourduty2.jpg"
+              class="img-fluid" alt=""
+              style="width:700px;">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>What do you do ?.</h3>
+            <p class="fst-italic">
+              We want you to enable your location into your device and allow us to access your location service.
+            </p>
+            <ul>
+              <li><i class="fas fa-hand-point-right"></i> Register and Login into our website or mobile application.</li>
+              <li><i class="fas fa-hand-point-right"></i> Click the call to action button and allow us to access your location.</li>
+              <li><i class="fas fa-hand-point-right"></i> keep the network connection is enable and move utill the arival of alert
+                message.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="https://czaacloudobjectbucket.s3.ap.cloud-object-storage.appdomain.cloud/assets/goal.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Main purpose of our application.</h3>
+            <ul>
+              <li><i class="fas fa-hand-point-right"></i> Alert you to travel passing through the infected zone.</li>
+              <li><i class="fas fa-hand-point-right"></i> Make sure you didn't pass on the infected zone.</li>
+              <li><i class="fas fa-hand-point-right"></i> Track your live locaiton and provide best route.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SAFE ZONE</span>
+          </a>
+          <p>We may give a save zone details when the user passing through the
+            containmentd zone via alert message. We include a google map for registered user to track where they are
+            pass and where the containmented zone present neary by the user.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Application</a></li>
+            <li><a href="#">Mobile Application</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+
+          </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright. Containment zone alerting application
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <div id="preloader"></div>
+<!-- watson -->
+  <html>
+<body>
+    <title>My Test Page</title>
+    <p>The body of my page.</p>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "f35b49ad-3fa2-40db-a330-ef0e0737040d", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "2d3aa3f0-cd10-454b-8b03-cffdf02cd42a", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </body>
+</html>
+  <!-- Vendor JS Files -->
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/aos/aos.js"></script>
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://containmentbuck.s3.jp-tok.cloud-object-storage.appdomain.cloud/assets/js/main.js"></script>
+
+</body>
+
+</html>
