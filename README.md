@@ -16,6 +16,8 @@ Category: Cloud App Development
 
 ## Project Description 📜📜:
 > The application is intended to provide information about the containment zones in a particular region by alerting people, through continuous monitoring of an individual's location through GPS.The key benefits of the application are monitoring people's activity and alerting them when they enter a contaminated zone.
+
+
 > Developed real-time alert system with Flask, HTML, CSS, and JavaScript, leading to a 40% increase in user engagement.
 > Integrated geolocation-based tracking with Flask and JavaScript, resulting in a 50% reduced response time.
 >  Utilized IBM Cloud Services and SendGrid for seamless communication, resulting in a 25% improvement in emergency response efficiency and enhanced public safety through timely email information dissemination
