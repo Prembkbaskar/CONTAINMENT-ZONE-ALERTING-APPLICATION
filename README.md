@@ -19,7 +19,11 @@ Category: Cloud App Development
 
 
 > Developed real-time alert system with Flask, HTML, CSS, and JavaScript, leading to a 40% increase in user engagement.
+
+
 > Integrated geolocation-based tracking with Flask and JavaScript, resulting in a 50% reduced response time.
+
+
 >  Utilized IBM Cloud Services and SendGrid for seamless communication, resulting in a 25% improvement in emergency response efficiency and enhanced public safety through timely email information dissemination
 
 ## Technologies Used 🖥️☁:
